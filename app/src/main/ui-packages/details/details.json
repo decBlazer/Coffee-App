@@ -1,0 +1,1708 @@
+{
+  "name": "details",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "Q0jgIWSN42lBBgrmLemeVw",
+    "node": "14:119",
+    "version": "6231129800",
+    "component-id": "7b75aa8ea734454903fa2138a1b7fdc203398fdd"
+  },
+  "default": "details",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Button"
+      },
+      {
+        "type": "group",
+        "id": "Size"
+      },
+      {
+        "type": "group",
+        "id": "Description"
+      },
+      {
+        "type": "group",
+        "id": "Detail Product"
+      },
+      {
+        "type": "group",
+        "id": "Image"
+      },
+      {
+        "type": "group",
+        "id": "Detail"
+      },
+      {
+        "type": "group",
+        "id": "Price"
+      },
+      {
+        "type": "group",
+        "id": "Button1"
+      },
+      {
+        "type": "text",
+        "id": "Price1"
+      },
+      {
+        "type": "text",
+        "id": "$ 4.53"
+      },
+      {
+        "type": "text",
+        "id": "Buy Now"
+      },
+      {
+        "type": "text",
+        "id": "Size1"
+      },
+      {
+        "type": "group",
+        "id": "Choice"
+      },
+      {
+        "type": "group",
+        "id": "Small"
+      },
+      {
+        "type": "group",
+        "id": "Medium"
+      },
+      {
+        "type": "group",
+        "id": "Large"
+      },
+      {
+        "type": "text",
+        "id": "S"
+      },
+      {
+        "type": "text",
+        "id": "M"
+      },
+      {
+        "type": "text",
+        "id": "L"
+      },
+      {
+        "type": "text",
+        "id": "Description1"
+      },
+      {
+        "type": "text",
+        "id": "A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85ml of fresh milk the fo.. Read More"
+      },
+      {
+        "type": "group",
+        "id": "Caffe Mocha"
+      },
+      {
+        "type": "vector",
+        "id": "Line"
+      },
+      {
+        "type": "group",
+        "id": "Tect"
+      },
+      {
+        "type": "group",
+        "id": "Superiority"
+      },
+      {
+        "type": "group",
+        "id": "Text"
+      },
+      {
+        "type": "group",
+        "id": "Rating"
+      },
+      {
+        "type": "text",
+        "id": "Cafe Mocha"
+      },
+      {
+        "type": "text",
+        "id": "Ice/Hot"
+      },
+      {
+        "type": "group",
+        "id": "Rating1"
+      },
+      {
+        "type": "text",
+        "id": "4.8 (230)"
+      },
+      {
+        "type": "group",
+        "id": "vuesax/linear/star"
+      },
+      {
+        "type": "group",
+        "id": "star"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      },
+      {
+        "type": "vector",
+        "id": "Vector1"
+      },
+      {
+        "type": "group",
+        "id": "Fast Delivery"
+      },
+      {
+        "type": "group",
+        "id": "Quality Bean"
+      },
+      {
+        "type": "group",
+        "id": "Extra Milk"
+      },
+      {
+        "type": "group",
+        "id": "Icon"
+      },
+      {
+        "type": "group",
+        "id": "Mask Group"
+      },
+      {
+        "type": "image",
+        "id": "motorbike 1"
+      },
+      {
+        "type": "vector",
+        "id": "motorbike 2"
+      },
+      {
+        "type": "group",
+        "id": "Icon1"
+      },
+      {
+        "type": "group",
+        "id": "Mask Group1"
+      },
+      {
+        "type": "image",
+        "id": "coffee-bean 1"
+      },
+      {
+        "type": "vector",
+        "id": "coffee-bean 2"
+      },
+      {
+        "type": "group",
+        "id": "Icon2"
+      },
+      {
+        "type": "group",
+        "id": "Mask Group2"
+      },
+      {
+        "type": "image",
+        "id": "packaging 1"
+      },
+      {
+        "type": "vector",
+        "id": "packaging 2"
+      },
+      {
+        "type": "image",
+        "id": "Image/Coffee/2"
+      },
+      {
+        "type": "group",
+        "id": "Back"
+      },
+      {
+        "type": "text",
+        "id": "Home"
+      },
+      {
+        "type": "group",
+        "id": "Favourite"
+      },
+      {
+        "type": "group",
+        "id": "Icon3"
+      },
+      {
+        "type": "group",
+        "id": "Arrow - Left 2"
+      },
+      {
+        "type": "vector",
+        "id": "Stroke 1"
+      },
+      {
+        "type": "group",
+        "id": "Icon4"
+      },
+      {
+        "type": "group",
+        "id": "Heart"
+      },
+      {
+        "type": "group",
+        "id": "Group 3"
+      },
+      {
+        "type": "vector",
+        "id": "Fill 4"
+      },
+      {
+        "type": "vector",
+        "id": "Clip 2"
+      }
+    ],
+    "modes": {
+      "details": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": false,
+            "children": [
+              "Button",
+              "Size",
+              "Description",
+              "Detail Product",
+              "Image",
+              "Detail"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.9725490196078431
+            }
+          },
+          {
+            "id": "Button",
+            "padding": {
+              "left": 24.0,
+              "top": 16.0,
+              "right": 24.0,
+              "bottom": 46.0
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.5
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": 0.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Price",
+              "Button1"
+            ],
+            "item-spacing": 34.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Size",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 24.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 589.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "cross-axis-align": "start",
+            "children": [
+              "Size1",
+              "Choice"
+            ],
+            "item-spacing": 16.0,
+            "clip-content": false
+          },
+          {
+            "id": "Description",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 24.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 470.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Description1",
+              "A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85ml of fresh milk the fo.. Read More"
+            ],
+            "item-spacing": 8.0,
+            "clip-content": false
+          },
+          {
+            "id": "Detail Product",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 24.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 354.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Caffe Mocha",
+              "Line"
+            ],
+            "item-spacing": 16.0,
+            "clip-content": false
+          },
+          {
+            "id": "Image",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.5
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 136.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 327.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 202.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Image/Coffee/2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Detail",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.5
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 68.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 327.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "space-between",
+            "children": [
+              "Back",
+              "Home",
+              "Favourite"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Price",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Price1",
+              "$ 4.53"
+            ],
+            "item-spacing": 4.0,
+            "clip-content": false
+          },
+          {
+            "id": "Button1",
+            "padding": {
+              "left": 20.0,
+              "top": 16.0,
+              "right": 20.0,
+              "bottom": 16.0
+            },
+            "border-radius": 16.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 217.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Buy Now"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 22.999999999999996,
+              "saturation": 0.6060606060606061,
+              "value": 0.7764705882352941
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Price1",
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.5647058823529412
+            },
+            "text-content": "Price",
+            "overflow": "visible",
+            "text-align": "left",
+            "line-height": 1.2000000762939453,
+            "typeface": "Sora"
+          },
+          {
+            "id": "$ 4.53",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 76.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 600.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 22.999999999999996,
+              "saturation": 0.6060606060606061,
+              "value": 0.7764705882352941
+            },
+            "text-content": "\\$ 4.53",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 18.0,
+            "line-height": 1.5,
+            "typeface": "Sora"
+          },
+          {
+            "id": "Buy Now",
+            "font-weight": 600.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Buy Now",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.5,
+            "typeface": "Sora"
+          },
+          {
+            "id": "Size1",
+            "font-weight": 600.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.1411764705882353
+            },
+            "text-content": "Size",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.5,
+            "typeface": "Sora"
+          },
+          {
+            "id": "Choice",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "item-spacing": 16.0,
+            "clip-content": false
+          },
+          {
+            "id": "Small",
+            "padding": 24.0,
+            "border-radius": 12.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 96.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 41.0
+              }
+            },
+            "stroke-width": 1.0,
+            "stroke-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.8901960784313725
+            },
+            "arrangement": "row",
+            "children": [
+              "S"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Medium",
+            "padding": 24.0,
+            "border-radius": 12.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 96.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 41.0
+              }
+            },
+            "stroke-width": 1.0,
+            "stroke-color": {
+              "alpha": 1.0,
+              "hue": 22.999999999999996,
+              "saturation": 0.6060606060606061,
+              "value": 0.7764705882352941
+            },
+            "arrangement": "row",
+            "children": [
+              "M"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 24.99999999999994,
+              "saturation": 0.048192771084337296,
+              "value": 0.9764705882352941
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Large",
+            "padding": 24.0,
+            "border-radius": 12.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 96.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 41.0
+              }
+            },
+            "stroke-width": 1.0,
+            "stroke-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.8901960784313725
+            },
+            "arrangement": "row",
+            "children": [
+              "L"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "clip-content": false
+          },
+          {
+            "id": "S",
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.1411764705882353
+            },
+            "text-content": "S",
+            "overflow": "visible",
+            "text-align": "left",
+            "line-height": 1.5,
+            "typeface": "Sora"
+          },
+          {
+            "id": "M",
+            "color": {
+              "alpha": 1.0,
+              "hue": 22.999999999999996,
+              "saturation": 0.6060606060606061,
+              "value": 0.7764705882352941
+            },
+            "text-content": "M",
+            "overflow": "visible",
+            "text-align": "left",
+            "line-height": 1.5,
+            "typeface": "Sora"
+          },
+          {
+            "id": "L",
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.1411764705882353
+            },
+            "text-content": "L",
+            "overflow": "visible",
+            "text-align": "left",
+            "line-height": 1.5,
+            "typeface": "Sora"
+          },
+          {
+            "id": "Description1",
+            "font-weight": 600.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.1411764705882353
+            },
+            "text-content": "Description",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.5,
+            "typeface": "Sora"
+          },
+          {
+            "id": "A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85ml of fresh milk the fo.. Read More",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 327.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.6352941176470588
+            },
+            "annotated-text-content": {
+              "text": "A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85ml of fresh milk the fo.. Read More",
+              "annotated-text-span-list": [
+                {
+                  "span-start": 0,
+                  "span-length": 118,
+                  "annotated-text-style": {
+                    "font-weight": 300.0,
+                    "line-height": 1.5,
+                    "typeface": "Sora",
+                    "color": {
+                      "alpha": 1.0,
+                      "hue": 0.0,
+                      "saturation": 0.0,
+                      "value": 0.6352941176470588
+                    }
+                  }
+                },
+                {
+                  "span-start": 118,
+                  "span-length": 1,
+                  "annotated-text-style": {
+                    "font-weight": 300.0,
+                    "line-height": 1.5,
+                    "typeface": "Sora"
+                  }
+                },
+                {
+                  "span-start": 119,
+                  "span-length": 9,
+                  "annotated-text-style": {
+                    "font-weight": 600.0,
+                    "line-height": 1.5,
+                    "typeface": "Sora",
+                    "color": {
+                      "alpha": 1.0,
+                      "hue": 22.999999999999996,
+                      "saturation": 0.6060606060606061,
+                      "value": 0.7764705882352941
+                    }
+                  }
+                }
+              ]
+            },
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "line-height": 1.5,
+            "typeface": "Sora"
+          },
+          {
+            "id": "Caffe Mocha",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Tect",
+              "Superiority"
+            ],
+            "item-spacing": 42.0,
+            "clip-content": false
+          },
+          {
+            "id": "Line",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": -1.000000913159674
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 295.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 0.0
+              }
+            },
+            "vector-content": "line.svg"
+          },
+          {
+            "id": "Tect",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Text",
+              "Rating"
+            ],
+            "item-spacing": 16.0,
+            "clip-content": false
+          },
+          {
+            "id": "Superiority",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Fast Delivery",
+              "Quality Bean",
+              "Extra Milk"
+            ],
+            "item-spacing": 12.0,
+            "clip-content": false
+          },
+          {
+            "id": "Text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Cafe Mocha",
+              "Ice/Hot"
+            ],
+            "item-spacing": 4.0,
+            "clip-content": false
+          },
+          {
+            "id": "Rating",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Rating1",
+              "4.8 (230)"
+            ],
+            "item-spacing": 4.0,
+            "clip-content": false
+          },
+          {
+            "id": "Cafe Mocha",
+            "font-weight": 600.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.1411764705882353
+            },
+            "text-content": "Cafe Mocha",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 20.0,
+            "line-height": 1.5,
+            "typeface": "Sora"
+          },
+          {
+            "id": "Ice/Hot",
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.6352941176470588
+            },
+            "text-content": "Ice/Hot",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 12.0,
+            "line-height": 1.2000000762939453,
+            "typeface": "Sora"
+          },
+          {
+            "id": "Rating1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "vuesax/linear/star"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "4.8 (230)",
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.16470588235294117
+            },
+            "annotated-text-content": {
+              "text": "4.8 (230)",
+              "annotated-text-span-list": [
+                {
+                  "span-start": 0,
+                  "span-length": 3,
+                  "annotated-text-style": {
+                    "font-weight": 600.0,
+                    "typeface": "Sora",
+                    "color": {
+                      "alpha": 1.0,
+                      "hue": 0.0,
+                      "saturation": 0.0,
+                      "value": 0.16470588235294117
+                    }
+                  }
+                },
+                {
+                  "span-start": 3,
+                  "span-length": 1,
+                  "annotated-text-style": {
+                    "font-weight": 600.0,
+                    "typeface": "Sora"
+                  }
+                },
+                {
+                  "span-start": 4,
+                  "span-length": 5,
+                  "annotated-text-style": {
+                    "font-weight": 400.0,
+                    "text-size": 12.0,
+                    "typeface": "Sora",
+                    "color": {
+                      "alpha": 1.0,
+                      "hue": 0.0,
+                      "saturation": 0.0,
+                      "value": 0.6352941176470588
+                    }
+                  }
+                }
+              ]
+            },
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.5,
+            "typeface": "Poppins"
+          },
+          {
+            "id": "vuesax/linear/star",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "star"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "star",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Vector",
+              "Vector1"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Vector",
+            "margin": {
+              "left": 1.66754150390625,
+              "top": 1.731250286102295,
+              "right": 1.6639480590820312,
+              "bottom": 1.736860752105713
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "vector.svg"
+          },
+          {
+            "id": "Vector1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            }
+          },
+          {
+            "id": "Fast Delivery",
+            "padding": 6.0,
+            "border-radius": 12.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Icon"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 0.34901960784313724,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.9294117647058824
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Quality Bean",
+            "padding": 10.0,
+            "border-radius": 12.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Icon1"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 0.34901960784313724,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.9294117647058824
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Extra Milk",
+            "padding": 10.0,
+            "border-radius": 12.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Icon2"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 0.34901960784313724,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.9294117647058824
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Icon",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 32.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 32.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Mask Group"
+            ]
+          },
+          {
+            "id": "Mask Group",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": 0.0000057220458984375
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": 0.00001049041748046875
+              }
+            },
+            "relative-transform": [
+              [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ]
+            ],
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "motorbike 1",
+              "motorbike 2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "motorbike 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "image-content": "motorbike_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "motorbike 2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "motorbike_2.svg"
+          },
+          {
+            "id": "Icon1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Mask Group1"
+            ]
+          },
+          {
+            "id": "Mask Group1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 2.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 2.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "coffee-bean 1",
+              "coffee-bean 2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "coffee-bean 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "image-content": "coffee_bean_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "coffee-bean 2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "coffee_bean_2.svg"
+          },
+          {
+            "id": "Icon2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Mask Group2"
+            ]
+          },
+          {
+            "id": "Mask Group2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 2.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 2.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "packaging 1",
+              "packaging 2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "packaging 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              }
+            },
+            "image-content": "packaging_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "packaging 2",
+            "border-radius": 5.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              }
+            },
+            "vector-content": "packaging_2.svg"
+          },
+          {
+            "id": "Image/Coffee/2",
+            "border-radius": 16.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "image-content": "image_coffee_2.png",
+            "scale": "fill"
+          },
+          {
+            "id": "Back",
+            "padding": 10.0,
+            "border-radius": 12.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Icon3"
+            ],
+            "item-spacing": 10.0,
+            "clip-content": false
+          },
+          {
+            "id": "Home",
+            "font-weight": 600.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.1411764705882353
+            },
+            "text-content": "Detail",
+            "overflow": "visible",
+            "text-size": 16.0,
+            "line-height": 1.2000000762939453,
+            "typeface": "Sora"
+          },
+          {
+            "id": "Favourite",
+            "padding": 10.0,
+            "border-radius": 12.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Icon4"
+            ],
+            "item-spacing": 10.0,
+            "clip-content": false
+          },
+          {
+            "id": "Icon3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Arrow - Left 2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Arrow - Left 2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 4.249999999999998
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 7.75
+              }
+            },
+            "relative-transform": [
+              [
+                -1.8369701465288538e-16,
+                -1.0,
+                0.0
+              ],
+              [
+                1.0,
+                -1.8369701465288538e-16,
+                0.0
+              ]
+            ],
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 15.5
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 8.5
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Stroke 1"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Stroke 1",
+            "margin": {
+              "right": 7.0
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "stroke_1.svg"
+          },
+          {
+            "id": "Icon4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Heart"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Heart",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 2.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 2.999908447265625
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.472515106201172
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 19.500999450683594
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Group 3",
+              "Fill 4"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Group 3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.472515106201172
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 19.500999450683594
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Clip 2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Fill 4",
+            "margin": {
+              "left": 13.4873046875,
+              "top": 3.703826904296875,
+              "right": 3.567396879196167,
+              "bottom": 11.876010417938232
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "fill_4.svg"
+          },
+          {
+            "id": "Clip 2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "details",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

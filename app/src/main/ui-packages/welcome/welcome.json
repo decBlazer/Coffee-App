@@ -1,0 +1,278 @@
+{
+  "name": "welcome",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "Q0jgIWSN42lBBgrmLemeVw",
+    "node": "14:117",
+    "version": "6231129800",
+    "component-id": "e500a6db0b17156c4602b238ca51ad6cfc6030aa"
+  },
+  "default": "welcome",
+  "documentation": "welcome screen",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "image",
+        "id": "Image/Coffee/6"
+      },
+      {
+        "type": "group",
+        "id": "Android Large - 2"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1"
+      },
+      {
+        "type": "text",
+        "id": "Get Started"
+      },
+      {
+        "type": "text",
+        "id": "Welcome to our cozy coffee corner, where every cup is delightful for you."
+      },
+      {
+        "type": "text",
+        "id": "Fall in Love with Coffee in Blissful Delight! "
+      }
+    ],
+    "modes": {
+      "welcome": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": false,
+            "children": [
+              "Image/Coffee/6",
+              "Android Large - 2",
+              "Rectangle 1",
+              "Get Started",
+              "Welcome to our cozy coffee corner, where every cup is delightful for you.",
+              "Fall in Love with Coffee in Blissful Delight! "
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.0
+            }
+          },
+          {
+            "id": "Image/Coffee/6",
+            "margin": {
+              "left": 3.0,
+              "bottom": 264.0
+            },
+            "drop-shadow": {
+              "color": {
+                "alpha": 0.24705882352941178,
+                "hue": 0.0,
+                "saturation": 0.0,
+                "value": 0.0
+              },
+              "blur": 0.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "image-content": "image_coffee_6.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Android Large - 2",
+            "margin": {
+              "left": 3.0,
+              "bottom": 264.0
+            },
+            "border-radius": 50.0,
+            "is-structured": false,
+            "fills": [
+              {
+                "color": {},
+                "opacity": 1.0,
+                "fill-type": "lineargradient",
+                "blend-mode": "normal",
+                "color-stops": [
+                  {
+                    "color": {},
+                    "color-stop-position": 0.6
+                  },
+                  {
+                    "color": {
+                      "alpha": 1.0,
+                      "hue": 0.0,
+                      "saturation": 0.0,
+                      "value": 0.0
+                    },
+                    "color-stop-position": 1.0
+                  }
+                ],
+                "gradient-handle-positions": [
+                  {
+                    "x": 0.5,
+                    "y": 0.0
+                  },
+                  {
+                    "x": 0.5,
+                    "y": 1.0
+                  },
+                  {
+                    "x": 0.0,
+                    "y": 0.0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "Rectangle 1",
+            "margin": {
+              "left": 48.0,
+              "top": 663.0,
+              "right": 48.0,
+              "bottom": 76.0
+            },
+            "border-radius": 15.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "rectangle_1.svg"
+          },
+          {
+            "id": "Get Started",
+            "margin": {
+              "left": 122.0,
+              "top": 681.0,
+              "right": 121.0,
+              "bottom": 93.0
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "font-weight": 700.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Get Started",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 20.0,
+            "line-height": 1.171875
+          },
+          {
+            "id": "Welcome to our cozy coffee corner, where every cup is delightful for you.",
+            "margin": {
+              "left": 30.0,
+              "top": 611.0,
+              "right": 30.0,
+              "bottom": 137.0
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "font-weight": 600.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.34509803921568627
+            },
+            "text-content": "Welcome to our cozy coffee corner, where every cup is delightful for you.",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 15.0,
+            "line-height": 1.171875
+          },
+          {
+            "id": "Fall in Love with Coffee in Blissful Delight! ",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 56.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 485.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 247.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 145.0
+              }
+            },
+            "font-weight": 700.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Fall in Love with Coffee in Blissful Delight! ",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 30.0,
+            "line-height": 1.171875
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "welcome",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
