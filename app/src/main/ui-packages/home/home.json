@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "Q0jgIWSN42lBBgrmLemeVw",
     "node": "14:118",
-    "version": "6231255757",
+    "version": "6239770087",
     "component-id": "91a579cdbeadd9bcd695bac3561e48088cafe007"
   },
   "default": "home",
@@ -482,7 +482,7 @@
       },
       {
         "type": "text",
-        "id": "Chicago, Illinois"
+        "id": "Chicago"
       },
       {
         "type": "group",
@@ -526,7 +526,7 @@
       },
       {
         "type": "vector",
-        "id": "Clip 6"
+        "id": "Vector12"
       },
       {
         "type": "vector",
@@ -557,7 +557,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": -0.5
+                "offset": 0.0
               },
               "vertical": {
                 "attachment": "end",
@@ -595,7 +595,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": -0.5
+                "offset": 0.0
               },
               "vertical": {
                 "attachment": "end",
@@ -2685,7 +2685,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": 0.0
+                "offset": 7.0
               },
               "vertical": {
                 "attachment": "start",
@@ -2695,11 +2695,11 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": 375.0
+                "value": 389.0
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": 280.0
+                "value": 286.0
               }
             },
             "vector-content": "container.svg"
@@ -2710,7 +2710,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": 0.0
+                "offset": 7.0
               },
               "vertical": {
                 "attachment": "start",
@@ -2778,7 +2778,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": 327.0
+                "value": 344.0
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -3078,14 +3078,14 @@
             "arrangement": "row",
             "main-axis-align": "start",
             "children": [
-              "Chicago, Illinois",
+              "Chicago",
               "Icon7"
             ],
             "item-spacing": 4.0,
             "clip-content": false
           },
           {
-            "id": "Chicago, Illinois",
+            "id": "Chicago",
             "font-weight": 600.0,
             "color": {
               "alpha": 1.0,
@@ -3093,7 +3093,7 @@
               "saturation": 0.0,
               "value": 0.8470588235294118
             },
-            "text-content": "Chicago, Illinois",
+            "text-content": "Chicago",
             "overflow": "visible",
             "text-align": "left",
             "line-height": 1.5,
@@ -3166,7 +3166,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": 327.0
+                "value": 344.0
               },
               "height-constraints": {
                 "sizing-mode": "shrink"
@@ -3234,7 +3234,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": 16.886667251586914
+                "value": 16.887042999267578
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -3281,7 +3281,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": 4.186708450317383
+                "value": 4.187084197998047
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -3290,7 +3290,7 @@
             },
             "is-structured": false,
             "children": [
-              "Clip 6",
+              "Vector12",
               "Fill 9"
             ],
             "clip-content": false
@@ -3309,7 +3309,11 @@
             }
           },
           {
-            "id": "Clip 6",
+            "id": "Vector12",
+            "presence": false,
+            "margin": {
+              "right": 0.0003757476806640625
+            },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -3343,7 +3347,7 @@
     {
       "design": "home",
       "size": {
-        "width": 360.0,
+        "width": 389.0,
         "height": 800.0
       }
     }

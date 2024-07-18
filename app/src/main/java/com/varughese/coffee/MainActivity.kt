@@ -9,6 +9,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.varughese.coffee.detail.DetailsScreen
+import com.varughese.coffee.homescreen.HomeScreen
 import com.varughese.coffee.ordering.OrderScreen
 
 class MainActivity : ComponentActivity() {
