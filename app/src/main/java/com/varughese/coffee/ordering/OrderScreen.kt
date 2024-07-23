@@ -10,6 +10,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -32,8 +34,18 @@ fun OrderPreview(navController: NavHostController, modifier: Modifier) {
     Column(
         modifier = Modifier
             .fillMaxSize()
+            .drawBehind {
+                val gradient = Brush.verticalGradient(
+                    colors = listOf(Color.Black, Color.Gray),
+                    startY = 0f,
+                    endY = size.height
+                )
+                drawRect(brush = gradient, size = size)
+            }
             .padding(16.dp)
+
     ) {
+
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.fillMaxWidth()
@@ -45,26 +57,36 @@ fun OrderPreview(navController: NavHostController, modifier: Modifier) {
                 Icon(
                     painter = painterResource(id = R.drawable.ic_back_arrow),
                     contentDescription = "Back",
-                    tint = Color.Black
+                    tint = Color.White
                 )
             }
+            Spacer(modifier = Modifier.width(117.dp))
+            Text(
+                text = "Order",
+                color = Color.White,
+                fontSize = 20.sp,
+                fontWeight = FontWeight.SemiBold,
+                modifier = Modifier.wrapContentWidth(Alignment.CenterHorizontally)
+            )
         }
+
+        Spacer(modifier = Modifier.height(18.dp))
 
         TopBar(selectedTab) { selectedTab = it }
 
-        Spacer(modifier = Modifier.height(48.dp))
+        Spacer(modifier = Modifier.height(72.dp))
 
         DeliveryAddressSection()
 
-        Spacer(modifier = Modifier.height(48.dp))
+        Spacer(modifier = Modifier.height(72.dp))
 
         ItemDetails()
 
-        Spacer(modifier = Modifier.height(48.dp))
+        Spacer(modifier = Modifier.height(72.dp))
 
         DiscountInfo()
 
-        Spacer(modifier = Modifier.height(48.dp))
+        Spacer(modifier = Modifier.height(72.dp))
 
         PaymentSummary()
 
@@ -84,7 +106,8 @@ fun TopBar(selectedTab: String, onTabSelected: (String) -> Unit) {
             onClick = { onTabSelected("Deliver") },
             colors = ButtonDefaults.buttonColors(
                 backgroundColor = if (selectedTab == "Deliver") Color(0xFFDE9368) else Color.Gray
-            )
+            ),
+            modifier = Modifier.width(150.dp)
         ) {
             Text(text = "Deliver", color = Color.White)
         }
@@ -92,7 +115,8 @@ fun TopBar(selectedTab: String, onTabSelected: (String) -> Unit) {
             onClick = { onTabSelected("Pick Up") },
             colors = ButtonDefaults.buttonColors(
                 backgroundColor = if (selectedTab == "Pick Up") Color(0xFFDE9368) else Color.Gray
-            )
+            ),
+            modifier = Modifier.width(150.dp)
         ) {
             Text(text = "Pick Up", color = Color.White)
         }
@@ -193,7 +217,7 @@ fun PaymentSummary() {
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(text = "Price")
-            Text(text = "$0.00") // Replace with your price variable
+            Text(text = "$3.63")
         }
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -213,7 +237,7 @@ fun PaymentSummary() {
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(text = "Cash/Wallet")
-            Text(text = "$5.63") // Replace with your amount variable
+            Text(text = "$5.63")
         }
     }
 }

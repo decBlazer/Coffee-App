@@ -31,6 +31,8 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.MaterialTheme.colors
+import androidx.compose.material.TabRowDefaults.tabIndicatorOffset
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Person
@@ -40,10 +42,17 @@ import androidx.compose.material3.ColorScheme
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Rect
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.varughese.coffee.R
 
 @Composable
@@ -54,94 +63,78 @@ fun HomeScreen(navController: NavController) {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Home(navController: NavController, modifier: Modifier = Modifier) {
-    Scaffold(
-        topBar = {
-            Column(modifier = Modifier.background(Color(0xFFc67c4e))) {
-                TopAppBar(
-                    title = {
-                        Column {
-                            Spacer(modifier = Modifier.padding(4.dp))
-                            Text("Location", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.ExtraBold )
-                            Text("Chicago, Illinois", style = MaterialTheme.typography.labelLarge)
-                        }
-                    },
-                    actions = {
-                        IconButton(onClick = { /* TODO: Another Action */ }) {
-                            Icon(Icons.Default.MoreVert, contentDescription = "More")
-                        }
-                    },
-                    backgroundColor = Color.Transparent,
-                    elevation = 0.dp
+    Scaffold() { innerPadding ->
+        Column(modifier = Modifier
+            .padding(bottom = innerPadding.calculateBottomPadding())
+            .drawBehind {
+                val gradient = Brush.verticalGradient(
+                    colors = listOf(Color.Black, Color.Gray),
+                    startY = 0f,
+                    endY = size.height
                 )
-                SearchBar()
+                drawRect(brush = gradient, size = size)
             }
-        },
-        bottomBar = {
-            BottomNavigation(
-                backgroundColor = MaterialTheme.colorScheme.surface
-            ) {
-                BottomNavigationItem(
-                    icon = { Icon(Icons.Default.Home, contentDescription = "Home") },
-                    selected = true,
-                    onClick = { /* TODO: Navigate to Home */ },
-                    selectedContentColor = MaterialTheme.colorScheme.primary,
-                    unselectedContentColor = MaterialTheme.colorScheme.onSurface
-                )
-                BottomNavigationItem(
-                    icon = { Icon(Icons.Default.Favorite, contentDescription = "Favorites") },
-                    selected = false,
-                    onClick = { /* TODO: Navigate to Favorites */ },
-                    selectedContentColor = MaterialTheme.colorScheme.primary,
-                    unselectedContentColor = MaterialTheme.colorScheme.onSurface
-                )
-                BottomNavigationItem(
-                    icon = { Icon(Icons.Default.Person, contentDescription = "Profile") },
-                    selected = false,
-                    onClick = { /* TODO: Navigate to Profile */ },
-                    selectedContentColor = MaterialTheme.colorScheme.primary,
-                    unselectedContentColor = MaterialTheme.colorScheme.onSurface
-                )
+        ) {
+            Column(modifier = Modifier.systemBarsPadding()) {
+
+
+                Column(
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 12.dp),
+                    verticalArrangement = Arrangement.spacedBy(10.dp)
+                ) {
+                    Text(
+                        "Location",
+                        style = TextStyle(
+                            color = Color(0xFFA2A2A2),
+                            fontWeight = FontWeight.Normal,
+                            fontSize = 12.sp
+                        )
+                    )
+                    Text(
+                        "Chicago, Illinois",
+                        style = TextStyle(
+                            color = Color(0xFFD8D8D8),
+                            fontWeight = FontWeight.SemiBold,
+                            fontSize = 14.sp
+                        )
+                    )
+                    SearchBar()
+                }
+
+
             }
-        }
-    ) { innerPadding ->
-        Column(modifier = Modifier.padding(innerPadding)
-            .background(Color(0xFF1B1B1B))) {
             // Promo Banner
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(16.dp)
+                    .padding(horizontal = 20.dp)
+                    .clip(RoundedCornerShape(16.dp))
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.banner_background),
                     contentDescription = "Banner background",
                     modifier = Modifier
                         .fillMaxWidth()
-                        .clip(RoundedCornerShape(30.dp))
+                        .height(150.dp)
+                        .clip(RoundedCornerShape(16.dp))
                 )
-                Image(
-                    painter = painterResource(id = R.drawable.promo),
-                    contentDescription = "Promo",
-                    modifier = Modifier
-                        .clip(RoundedCornerShape(8.dp))
-                        .align(Alignment.TopStart)
-                        .padding(horizontal = 80.dp, vertical = 10.dp)
-                )
-
                 Column(
                     modifier = Modifier
-                        .align(Alignment.BottomStart)
-                        .padding(horizontal = 80.dp, vertical = 15.dp),
+                        .align(Alignment.CenterStart)
+                        .padding(horizontal = 20.dp)
                 ) {
-                    Text(
-                        text = "Buy one",
-                        color = Color.White,
-                        fontWeight = FontWeight.Bold
+                    Image(
+                        painter = painterResource(id = R.drawable.promo),
+                        contentDescription = "Promo",
+                        modifier = Modifier
+                            .size(65.dp)
+                            .padding(horizontal = 5.dp)
                     )
-                    Text(
+
+                    HighlightText(text = "Buy one", modifier = Modifier.padding(horizontal = 5.dp))
+                    HighlightText(
                         text = "get one FREE",
-                        color = Color.White,
-                        fontWeight = FontWeight.Bold
+                        modifier = Modifier.padding(horizontal = 5.dp)
                     )
                 }
             }
@@ -155,15 +148,28 @@ fun Home(navController: NavController, modifier: Modifier = Modifier) {
                     .fillMaxWidth()
                     .padding(vertical = 8.dp),
                 backgroundColor = MaterialTheme.colorScheme.background,
-                contentColor = MaterialTheme.colorScheme.primary
+                contentColor = MaterialTheme.colorScheme.primary,
+                indicator = { tabPositions ->
+                    TabRowDefaults.Indicator(
+                        Modifier.tabIndicatorOffset(tabPositions[selectedTabIndex]),
+                        color = Color(0xFFDE9368)
+                    )
+                }
             ) {
                 categories.forEachIndexed { index, category ->
                     Tab(
-                        text = { Text(category, style = MaterialTheme.typography.labelLarge) },
+                        text = {
+                            Text(
+                                category,
+                                fontSize = 14.sp,
+                                fontWeight = FontWeight.SemiBold,
+                                color = if (selectedTabIndex == index) Color.White else Color.Black
+                            )
+                        },
                         selected = selectedTabIndex == index,
-                        onClick = { selectedTabIndex = index},
-                        selectedContentColor = MaterialTheme.colorScheme.primary,
-                        unselectedContentColor = MaterialTheme.colorScheme.onBackground
+                        onClick = { selectedTabIndex = index },
+                        modifier = Modifier
+                            .background(if (selectedTabIndex == index) Color(0xFFDE9368) else Color.Transparent) // Conditional background
                     )
                 }
             }
@@ -189,25 +195,81 @@ fun Home(navController: NavController, modifier: Modifier = Modifier) {
 }
 
 @Composable
+fun HighlightText(text: String, modifier: Modifier) {
+    Box(
+        modifier = modifier
+            .drawBehind {
+                val gradient = Brush.verticalGradient(
+                    colors = listOf(Color.Black, Color.Gray),
+                    startY = 0f,
+                    endY = size.height
+                )
+                drawRect(brush = gradient, size = size)
+            }
+            .drawBehind {
+                val padding = 1.dp.toPx()
+                val backgroundRect = Rect(
+                    left = 0f,
+                    top = 0f,
+                    right = size.width + 2 * padding,
+                    bottom = size.height + 2 * padding
+                )
+                val gradient = Brush.verticalGradient(
+                    colors = listOf(Color(0xFF1E1E1E), Color.DarkGray),
+                    startY = 0f,
+                    endY = size.height
+                )
+                drawRect(
+                    brush = gradient,
+                    topLeft = Offset(-padding, -padding),
+                    size = backgroundRect.size
+                )
+            }
+            .padding(4.dp)
+    ) {
+        Text(
+            text = text,
+            color = Color.White,
+            fontWeight = FontWeight.SemiBold,
+            fontSize = 25.sp,
+            modifier = Modifier.padding(horizontal = 5.dp)
+        )
+    }
+}
+
+@Composable
 fun SearchBar() {
     var query by remember { mutableStateOf("") }
 
     TextField(
         value = query,
         onValueChange = { query = it },
-        placeholder = { Text("Search coffee") },
-        leadingIcon = { Icon(Icons.Default.Search, contentDescription = "Search Icon") },
+        placeholder = {
+            Text(
+                "Search coffee",
+                color = Color.White,
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Normal
+            )
+        },
+        leadingIcon = {
+            Icon(
+                Icons.Default.Search,
+                contentDescription = "Search Icon",
+                tint = Color.White
+            )
+        },
         modifier = Modifier
             .fillMaxWidth()
-            .padding(16.dp)
-            .background(Color.White, RoundedCornerShape(8.dp)),
+            .height(54.dp),
         colors = TextFieldDefaults.textFieldColors(
-            backgroundColor = Color.White,
+            backgroundColor = Color(0xFF2A2A2A),
             focusedIndicatorColor = Color.Transparent,
             unfocusedIndicatorColor = Color.Transparent,
             disabledIndicatorColor = Color.Transparent
         ),
-        singleLine = true
+        singleLine = true,
+        shape = RoundedCornerShape(16.dp)
     )
 }
 
@@ -231,16 +293,15 @@ fun CoffeeCard(navController: NavController, coffee: CoffeeItem) {
                 painter = painterResource(id = coffee.imageRes),
                 contentDescription = coffee.name,
                 modifier = Modifier
-                    .size(64.dp)
+                    .size(128.dp)
                     .clip(RoundedCornerShape(8.dp))
             )
             Spacer(modifier = Modifier.width(16.dp))
             Column {
-                Text(coffee.name, style = MaterialTheme.typography.titleLarge)
-                Text(coffee.description, style = MaterialTheme.typography.bodyMedium)
+                Text(coffee.name, fontWeight = FontWeight.SemiBold, fontSize = 24.sp)
+                Text(coffee.description, fontWeight = FontWeight.Normal, fontSize = 18.sp, color = Color(0xFFA2A2A2))
                 Text(
-                    coffee.price,
-                    style = MaterialTheme.typography.bodySmall.copy(fontWeight = FontWeight.Bold)
+                    coffee.price, fontWeight = FontWeight.SemiBold, fontSize = 24.sp
                 )
             }
         }

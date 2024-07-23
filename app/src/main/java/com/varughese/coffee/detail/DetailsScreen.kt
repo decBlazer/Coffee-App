@@ -7,6 +7,7 @@ import androidx.compose.runtime.remember
 import androidx.navigation.NavHostController
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
@@ -16,6 +17,8 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
@@ -42,7 +45,14 @@ fun CoffeeDetailScreen(navController: NavHostController, modifier: Modifier) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF1B1B1B))
+            .drawBehind {
+                val gradient = Brush.verticalGradient(
+                    colors = listOf(Color.Black, Color.Gray),
+                    startY = 0f,
+                    endY = size.height
+                )
+                drawRect(brush = gradient, size = size)
+            }
             .padding(16.dp)
     ) {
         Row(
@@ -119,43 +129,56 @@ fun CoffeeDetailScreen(navController: NavHostController, modifier: Modifier) {
         Text(
             text = "Description",
             color = Color.Gray,
-            fontSize = 16.sp,
+            fontSize = 18.sp,
             fontWeight = FontWeight.Bold
         )
 
         Spacer(modifier = Modifier.height(8.dp))
 
         Text(
-            text = "A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85 ml of fresh milk the fo...",
+            text = "A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85 ml of fresh milk. It is normally serv...",
             color = Color.White,
-            fontSize = 14.sp,
+            fontSize = 16.sp,
+            fontWeight = FontWeight.Normal,
             maxLines = 3,
             overflow = TextOverflow.Ellipsis
         )
 
-        Spacer(modifier = Modifier.height(48.dp))
+        Spacer(modifier = Modifier.height(72.dp))
 
         Text(
             text = "Size",
             color = Color.Gray,
-            fontSize = 16.sp,
+            fontSize = 18.sp,
             fontWeight = FontWeight.Bold
         )
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(32.dp))
 
         Row {
-            listOf("Small", "Medium", "Large").forEach { size ->
+            listOf("S", "M", "L").forEach { size ->
                 Box(
                     modifier = Modifier
-                        .padding(end = 12.dp)
-                        .size(width = 80.dp, height = 60.dp)
+                        .padding(horizontal = 12.dp)
+                        .size(width = 100.dp, height = 50.dp)
                         .clip(CircleShape)
                         .background(if (selectedSize == size) Color(0xFFc67c4e) else Color.White)
-                        .clickable { selectedSize = size },
+                        .border(
+                            width = 2.dp,
+                            color = if (selectedSize == size) Color(0xFFDE9368) else Color.LightGray,
+                            shape = CircleShape
+                        )
+                        .clickable {
+                            selectedSize = size
+                        },
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(text = size, color = Color.Black, fontSize = 12.sp)
+                    Text(
+                        text = size,
+                        color = if (selectedSize == size) Color.Black else Color(0xFF242424),
+                        fontSize = 14.sp,
+                        fontWeight = FontWeight.Normal
+                    )
                 }
             }
         }
@@ -167,38 +190,39 @@ fun CoffeeDetailScreen(navController: NavHostController, modifier: Modifier) {
             horizontalArrangement = Arrangement.SpaceBetween,
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text(
-                text = "Price",
-                color = Color.LightGray,
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold
-            )
+            Column(horizontalAlignment = Alignment.Start) { // Align price text and number vertically
+                Text(
+                    text = "Price",
+                    color = Color.LightGray,
+                    fontSize = 16.sp, // Adjust font size for better visual balance
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = "$ 4.53",
+                    color = Color(0xFFc67c4e),
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                    style = MaterialTheme.typography.h4
+                )
+            }
 
-            Text(
-                text = "$ 4.53",
-                color = Color(0xFFc67c4e),
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold,
-                style = MaterialTheme.typography.h4
-            )
-        }
+            Spacer(modifier = Modifier.height(16.dp))
 
-        Spacer(modifier = Modifier.height(16.dp))
-
-        Button(
-            onClick = { navController.navigate("order") },
-            colors = ButtonDefaults.buttonColors(backgroundColor = Color(0xFFc67c4e)),
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(50.dp)
-                .clip(RoundedCornerShape(16.dp))
-        ) {
-            Text(
-                text = "Buy Now",
-                color = Color.White,
-                fontSize = 16.sp,
-                fontWeight = FontWeight.Bold
-            )
+            Button(
+                onClick = { navController.navigate("order") },
+                colors = ButtonDefaults.buttonColors(backgroundColor = Color(0xFFc67c4e)),
+                modifier = Modifier
+                    .width(300.dp)
+                    .height(50.dp)
+                    .clip(RoundedCornerShape(16.dp))
+            ) {
+                Text(
+                    text = "Buy Now",
+                    color = Color.White,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold
+                )
+            }
         }
     }
 }
